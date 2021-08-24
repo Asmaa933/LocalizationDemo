@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="3Ih-Kk-A9v">
-                    <rect key="frame" x="164.5" y="407" width="85" height="82"/>
+                    <rect key="frame" x="20" y="407" width="374" height="82"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIZ-2x-Vyb">
                             <rect key="frame" x="0.0" y="0.0" width="82.5" height="20.5"/>
@@ -48,9 +48,9 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="3Ih-Kk-A9v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="0OE-o6-nKQ"/>
                 <constraint firstItem="3Ih-Kk-A9v" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="NHl-uf-clc"/>
                 <constraint firstItem="Nwd-oS-oEz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="V30-a4-i4v"/>
-                <constraint firstItem="3Ih-Kk-A9v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hhF-xV-pAD"/>
                 <constraint firstItem="Nwd-oS-oEz" firstAttribute="top" secondItem="3Ih-Kk-A9v" secondAttribute="bottom" constant="25" id="iBX-om-AVu"/>
                 <constraint firstItem="3Ih-Kk-A9v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ifL-3n-3Jc"/>
             </constraints>
