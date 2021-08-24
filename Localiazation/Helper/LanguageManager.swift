@@ -13,13 +13,6 @@ class LanguageManager {
     
     static let shared = LanguageManager()
     
-    
-    private(set) var bundle: Bundle
-    
-    private init() {
-        bundle = .main
-    }
-    
     func getCurrentLanguage() -> String? {
         let langs = UserDefaults.standard.object(forKey: "AppleLanguages") as! NSArray
         
@@ -37,7 +30,7 @@ class LanguageManager {
         if (getCurrentLanguage() ?? "en") != language {
             UserDefaults.standard.setValue([language], forKey: "AppleLanguages")
             UserDefaults.standard.synchronize()
-            setBundle(forLanaguageCode: language)
+            Bundle.swizzleLocalization()
             changeSemanticContentAttribute()
             isChanged = true
         }
@@ -61,19 +54,6 @@ class LanguageManager {
             UITabBar.appearance().semanticContentAttribute = .forceLeftToRight
             UISearchBar.appearance().semanticContentAttribute = .forceLeftToRight
             UILabel.appearance().semanticContentAttribute = .forceLeftToRight
-        }
-    }
-    
-    func localizedString(forKey key: String, value comment: String) -> String {
-        let localized = bundle.localizedString(forKey: key, value: comment, table: nil)
-        return localized
-    }
-    
-    private func setBundle(forLanaguageCode code: String) {
-        if let path = Bundle.main.path(forResource: code, ofType: "lproj") {
-            bundle = Bundle(path: path) ?? .main
-        } else {
-            bundle = Bundle.main
         }
     }
 }

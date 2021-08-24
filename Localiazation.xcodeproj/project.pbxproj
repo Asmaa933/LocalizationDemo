@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		991A5A8426D5BC9B006AA6E3 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A5A8326D5BC9B006AA6E3 /* BundleExtension.swift */; };
 		CE3236D926D59E8F00A639CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3236D826D59E8F00A639CF /* AppDelegate.swift */; };
 		CE3236DB26D59E8F00A639CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3236DA26D59E8F00A639CF /* SceneDelegate.swift */; };
 		CE3236E226D59E9400A639CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3236E126D59E9400A639CF /* Assets.xcassets */; };
@@ -16,7 +17,7 @@
 		CE32370A26D59EC900A639CF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32370826D59EC900A639CF /* WelcomeViewController.swift */; };
 		CE32371026D5A16A00A639CF /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32370F26D5A16900A639CF /* LanguageManager.swift */; };
 		CE32371426D5A1D200A639CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE32371626D5A1D200A639CF /* Localizable.strings */; };
-		CE32371E26D5A56400A639CF /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32371D26D5A56400A639CF /* UIApplication.swift */; };
+		CE32371E26D5A56400A639CF /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32371D26D5A56400A639CF /* UIApplicationExtension.swift */; };
 		CE32372026D5A65800A639CF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32371F26D5A65800A639CF /* StringExtension.swift */; };
 		CE32372226D5A6B700A639CF /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE32372426D5A6B700A639CF /* WelcomeViewController.xib */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		991A5A8326D5BC9B006AA6E3 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		CE3236D526D59E8F00A639CF /* Localiazation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Localiazation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3236D826D59E8F00A639CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3236DA26D59E8F00A639CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +57,7 @@
 		CE32370F26D5A16900A639CF /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		CE32371526D5A1D200A639CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE32371726D5A1DD00A639CF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CE32371D26D5A56400A639CF /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		CE32371D26D5A56400A639CF /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		CE32371F26D5A65800A639CF /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		CE32372326D5A6B700A639CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WelcomeViewController.xib; sourceTree = "<group>"; };
 		CE32372626D5A6BE00A639CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/WelcomeViewController.strings; sourceTree = "<group>"; };
@@ -185,8 +187,9 @@
 		CE32371C26D5A53000A639CF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CE32371D26D5A56400A639CF /* UIApplication.swift */,
+				CE32371D26D5A56400A639CF /* UIApplicationExtension.swift */,
 				CE32371F26D5A65800A639CF /* StringExtension.swift */,
+				991A5A8326D5BC9B006AA6E3 /* BundleExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -323,9 +326,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE32371E26D5A56400A639CF /* UIApplication.swift in Sources */,
+				CE32371E26D5A56400A639CF /* UIApplicationExtension.swift in Sources */,
 				CE32370A26D59EC900A639CF /* WelcomeViewController.swift in Sources */,
 				CE32372026D5A65800A639CF /* StringExtension.swift in Sources */,
+				991A5A8426D5BC9B006AA6E3 /* BundleExtension.swift in Sources */,
 				CE3236D926D59E8F00A639CF /* AppDelegate.swift in Sources */,
 				CE3236DB26D59E8F00A639CF /* SceneDelegate.swift in Sources */,
 				CE32371026D5A16A00A639CF /* LanguageManager.swift in Sources */,
